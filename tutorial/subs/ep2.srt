@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:12,000
+Tekan "Isi Data Contoh" untuk mulai coba-coba.
+
+2
+00:00:12,000 --> 00:00:23,470
+Bahan sudah terisi: telur, susu, gula. Buka menu Bahan.
+
+3
+00:00:23,470 --> 00:00:34,070
+Tiap bahan ada harga + stok. Stok menipis ada tandanya.
+
+4
+00:00:34,070 --> 00:00:46,870
+Tab Produk & Resep: 1 cup = telur + susu + gula + cup.
+
+5
+00:00:46,870 --> 00:00:59,470
+HPP dihitung otomatis: Rp2.100/cup. Tanpa hitung manual.

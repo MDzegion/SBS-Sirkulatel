@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>EP1 Konsep Dagang — SBS Sirkulatel</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #F8FAFC; }
+      body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #0F172A; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #F8FAFC; }
+      .clip { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 90px 80px; text-align: center; }
+      .kicker { font-size: 44px; font-weight: 700; letter-spacing: 6px; color: #059669; text-transform: uppercase; margin-bottom: 30px; }
+      .hero { font-size: 118px; font-weight: 800; line-height: 1.15; color: #0F172A; }
+      .hero .green { color: #047857; }
+      .hero .amber { color: #D97706; }
+      .sub { margin-top: 36px; font-size: 56px; line-height: 1.4; color: #334155; }
+      .cards { display: flex; gap: 28px; margin-top: 60px; }
+      .card { width: 200px; background: #FFFFFF; border: 3px solid #E2E8F0; border-radius: 28px; padding: 30px 10px; }
+      .card .emoji { font-size: 84px; }
+      .card .name { margin-top: 12px; font-size: 42px; font-weight: 700; color: #0F172A; }
+      .totalbar { margin-top: 56px; background: #064E3B; color: #FFFFFF; border-radius: 28px; padding: 34px 70px; font-size: 60px; font-weight: 800; }
+      .math { font-size: 96px; font-weight: 800; line-height: 1.5; }
+      .math .dim { color: #64748B; font-weight: 600; }
+      .math .big { color: #047857; font-size: 150px; }
+      .bars { width: 760px; margin-top: 50px; text-align: left; }
+      .bar-row { margin-bottom: 26px; }
+      .bar-label { font-size: 46px; font-weight: 700; margin-bottom: 10px; }
+      .bar-track { height: 64px; border-radius: 32px; background: #E2E8F0; overflow: hidden; }
+      .bar-fill { height: 100%; border-radius: 32px; transform-origin: left center; }
+      .pill { display: inline-block; margin-top: 50px; background: #FFFBEB; border: 3px solid #F59E0B; color: #92400E; border-radius: 999px; padding: 26px 60px; font-size: 54px; font-weight: 800; }
+      .mockbtn { margin-top: 56px; background: #059669; color: #FFFFFF; border-radius: 28px; padding: 40px 110px; font-size: 68px; font-weight: 800; box-shadow: 0 18px 40px rgba(5,150,105,.35); }
+      .shield { margin-top: 36px; font-size: 52px; font-weight: 700; color: #047857; }
+      .logo { font-size: 120px; font-weight: 800; color: #064E3B; }
+      .tagline { margin-top: 28px; font-size: 58px; color: #334155; line-height: 1.4; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="78.74" data-width="1080" data-height="1920">
+      <section id="s1" class="clip" data-start="0" data-duration="13.34" data-track-index="1">
+        <p class="kicker">Buat yang jualan</p>
+        <h1 id="s1-title" class="hero">Laris terus,<br />tapi uangnya<br /><span class="amber">tidak nambah?</span></h1>
+        <p id="s1-sub" class="sub">Mungkin hitungnya yang belum pas.</p>
+      </section>
+
+      <section id="s2" class="clip" data-start="13.34" data-duration="13.75" data-track-index="1">
+        <p class="kicker">Langkah 1</p>
+        <h1 id="s2-title" class="hero">Modal itu<br /><span class="green">semua bahan</span></h1>
+        <div class="cards">
+          <div class="card" id="s2-c1"><div class="emoji">🥚</div><div class="name">Telur</div></div>
+          <div class="card" id="s2-c2"><div class="emoji">🥛</div><div class="name">Susu</div></div>
+          <div class="card" id="s2-c3"><div class="emoji">🍬</div><div class="name">Gula</div></div>
+          <div class="card" id="s2-c4"><div class="emoji">🥤</div><div class="name">Cup</div></div>
+        </div>
+        <div id="s2-total" class="totalbar">Modal Rp210.000</div>
+      </section>
+
+      <section id="s3" class="clip" data-start="27.09" data-duration="14.61" data-track-index="1">
+        <p class="kicker">Langkah 2</p>
+        <h1 id="s3-title" class="hero">HPP = modal<br />dibagi yang jadi</h1>
+        <p id="s3-math" class="math"><span class="dim">Rp210.000 ÷ 100 cup</span><br /><span class="big">Rp2.100</span></p>
+      </section>
+
+      <section id="s4" class="clip" data-start="41.7" data-duration="15.02" data-track-index="1">
+        <p class="kicker">Langkah 3</p>
+        <h1 id="s4-title" class="hero">Jual <span class="green">Rp5.000</span><br />untung <span class="green">Rp2.900</span></h1>
+        <div class="bars">
+          <div class="bar-row"><div class="bar-label">Harga Rp5.000</div><div class="bar-track"><div id="s4-b1" class="bar-fill" style="width:100%;background:#059669;"></div></div></div>
+          <div class="bar-row"><div class="bar-label">HPP Rp2.100</div><div class="bar-track"><div id="s4-b2" class="bar-fill" style="width:42%;background:#F59E0B;"></div></div></div>
+        </div>
+        <div id="s4-pill" class="pill">Margin 58% — sehat!</div>
+      </section>
+
+      <section id="s5" class="clip" data-start="56.72" data-duration="14.01" data-track-index="1">
+        <p class="kicker">Sebelum masak banyak</p>
+        <h1 id="s5-title" class="hero">Coba dulu di<br /><span class="green">Simulator</span></h1>
+        <div id="s5-btn" class="mockbtn">SIMULASIKAN</div>
+        <p id="s5-shield" class="shield">✓ Catatan asli aman</p>
+      </section>
+
+      <section id="s6" class="clip" data-start="70.73" data-duration="8.01" data-track-index="1">
+        <h1 id="s6-logo" class="logo">SBS Sirkulatel</h1>
+        <p id="s6-tag" class="tagline">Catat harian,<br />uji keputusan sebelum eksekusi.</p>
+      </section>
+
+      <audio id="vo-ep1-s1" data-start="0" data-duration="12.84" src="audio/ep1-s1.mp3"></audio>
+      <audio id="vo-ep1-s2" data-start="13.34" data-duration="13.25" src="audio/ep1-s2.mp3"></audio>
+      <audio id="vo-ep1-s3" data-start="27.09" data-duration="14.11" src="audio/ep1-s3.mp3"></audio>
+      <audio id="vo-ep1-s4" data-start="41.7" data-duration="14.52" src="audio/ep1-s4.mp3"></audio>
+      <audio id="vo-ep1-s5" data-start="56.72" data-duration="13.51" src="audio/ep1-s5.mp3"></audio>
+      <audio id="vo-ep1-s6" data-start="70.73" data-duration="7.51" src="audio/ep1-s6.mp3"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.from("#s1-title", { y: 70, opacity: 0, duration: 0.8, ease: "power3.out" }, 0.2);
+      tl.from("#s1-sub", { y: 40, opacity: 0, duration: 0.7, ease: "power3.out" }, 0.9);
+      tl.from("#s2-title", { y: 70, opacity: 0, duration: 0.8, ease: "power3.out" }, 13.54);
+      tl.from("#s2-c1", { y: 60, opacity: 0, duration: 0.5, ease: "power3.out" }, 14.3);
+      tl.from("#s2-c2", { y: 60, opacity: 0, duration: 0.5, ease: "power3.out" }, 14.55);
+      tl.from("#s2-c3", { y: 60, opacity: 0, duration: 0.5, ease: "power3.out" }, 14.8);
+      tl.from("#s2-c4", { y: 60, opacity: 0, duration: 0.5, ease: "power3.out" }, 15.05);
+      tl.from("#s2-total", { y: 50, opacity: 0, duration: 0.7, ease: "power3.out" }, 15.8);
+      tl.from("#s3-title", { y: 70, opacity: 0, duration: 0.8, ease: "power3.out" }, 27.29);
+      tl.from("#s3-math", { y: 60, opacity: 0, duration: 0.8, ease: "power3.out" }, 28.2);
+      tl.from("#s4-title", { y: 70, opacity: 0, duration: 0.8, ease: "power3.out" }, 41.9);
+      tl.from("#s4-b1", { scaleX: 0, duration: 0.8, ease: "power3.out" }, 42.7);
+      tl.from("#s4-b2", { scaleX: 0, duration: 0.8, ease: "power3.out" }, 43.1);
+      tl.from("#s4-pill", { y: 40, opacity: 0, duration: 0.7, ease: "power3.out" }, 44.0);
+      tl.from("#s5-title", { y: 70, opacity: 0, duration: 0.8, ease: "power3.out" }, 56.92);
+      tl.from("#s5-btn", { scale: 0.7, opacity: 0, duration: 0.7, ease: "back.out(1.6)" }, 57.7);
+      tl.from("#s5-shield", { y: 30, opacity: 0, duration: 0.6, ease: "power3.out" }, 58.4);
+      tl.from("#s6-logo", { y: 60, opacity: 0, duration: 0.8, ease: "power3.out" }, 70.93);
+      tl.from("#s6-tag", { y: 40, opacity: 0, duration: 0.7, ease: "power3.out" }, 71.6);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

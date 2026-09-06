@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:12,230
+Business Simulator: coba-coba tanpa merusak catatan.
+
+2
+00:00:12,230 --> 00:00:26,500
+100 cup → modal Rp210.000, potensi untung Rp290.000.
+
+3
+00:00:26,500 --> 00:00:38,930
+Ganti harga jual → untung langsung berubah.
+
+4
+00:00:38,930 --> 00:00:52,400
+Harga telur naik → margin turun, tapi tetap untung.
+
+5
+00:00:52,400 --> 00:01:08,000
+Target omzet Rp1.000.000 → butuh ±200 cup.
+
+6
+00:01:08,000 --> 00:01:23,930
+Simpan Skenario A & B, lalu bandingkan.
+
+7
+00:01:23,930 --> 00:01:36,800
+Salin ke Rencana Produksi → pindah ke Dapur, stok aman.

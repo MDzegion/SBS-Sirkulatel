@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:13,340
+Jualan laris, tapi uang tidak nambah? Mungkin hitungnya belum pas.
+
+2
+00:00:13,340 --> 00:00:27,090
+Modal = semua bahan yang dibeli (telur, susu, gula, cup).
+
+3
+00:00:27,090 --> 00:00:41,700
+Modal Rp210.000 ÷ 100 cup = HPP Rp2.100/cup.
+
+4
+00:00:41,700 --> 00:00:56,720
+Rp5.000 − Rp2.100 = untung Rp2.900/cup (margin 58%).
+
+5
+00:00:56,720 --> 00:01:10,730
+Coba dulu di Business Simulator — aman, tidak merusak catatan.
+
+6
+00:01:10,730 --> 00:01:18,740
+SBS Sirkulatel — catat harian, uji keputusan sebelum eksekusi.
