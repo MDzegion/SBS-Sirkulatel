@@ -1,5 +1,7 @@
 # SBS Sirkulatel — Sistem Bisnis Sederhana (Dokumentasi SDD)
 
+🌐 **Live Web App**: [https://mdzegion.github.io/SBS-Sirkulatel/](https://mdzegion.github.io/SBS-Sirkulatel/)
+
 Repositori dokumentasi dan arsitektur **SBS Sirkulatel** (Sistem Bisnis Sederhana untuk UMKM F&B, Kuliner, dan Pengolahan Komoditas). Disusun dengan **Spec-Driven Development (SDD)**: spesifikasi ditetapkan sebelum implementasi kode.
 
 Versi spek: **1.1 (MVP Rapikan)**.
